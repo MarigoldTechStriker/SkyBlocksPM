@@ -22,10 +22,10 @@ class SkyBlockCommand extends BaseCommand {
 
     public function prepare(): void {
         $this->setPermission('skyblockspm.command');
-        $this->registerSubCommand(new AcceptSubCommand('accept', 'Accept the incoming invite to a SkyBlock Island'));
+        $this->registerSubCommand(new AcceptSubCommand('accept', 'Accept the incoming invite from another player to a SkyBlock Island'));
         $this->registerSubCommand(new ChatSubCommand('chat', 'Chat with your SkyBlock Island members'));
-        $this->registerSubCommand(new CreateSubCommand('create', 'Create your own SkyBlock Island'));
-        $this->registerSubCommand(new DeleteSubCommand('delete', 'Delete a users SkyBlock Island', ['disband']));
+        $this->registerSubCommand(new CreateSubCommand('create', 'Create your very own SkyBlock Island'));
+        $this->registerSubCommand(new DeleteSubCommand('delete', 'Delete a user from your SkyBlock Island', ['disband']));
         $this->registerSubCommand(new KickSubCommand('kick', 'Kick a member from your SkyBlock Island'));
         $this->registerSubCommand(new LeaveSubCommand('leave', 'Leave your current SkyBlock Island'));
         $this->registerSubCommand(new SettingsSubCommand('settings', 'Edit your SkyBlock Island settings'));
