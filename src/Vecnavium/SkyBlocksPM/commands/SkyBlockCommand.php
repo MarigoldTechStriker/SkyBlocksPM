@@ -31,7 +31,7 @@ class SkyBlockCommand extends BaseCommand {
         $this->registerSubCommand(new SettingsSubCommand('settings', 'Edit your SkyBlock Island settings'));
         $this->registerSubCommand(new SetWorldCommand('setworld', 'Sets the current world as the SkyBlock World which will be copied to newer worlds upon Island creation'));
         $this->registerSubCommand(new TpSubCommand('tp', 'Teleport to a users SkyBlock Island', ['go', 'home']));
-        $this->registerSubCommand(new InviteSubCommand('invite', 'Invites the player to your SkyBlock Island'));
+        $this->registerSubCommand(new InviteSubCommand('invite', 'Invites the player to your current SkyBlock Island that you are on'));
         $this->registerSubCommand(new VisitSubCommand('visit', 'Visit a players SkyBlock Island'));
     }
 
